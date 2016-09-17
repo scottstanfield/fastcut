@@ -5,5 +5,5 @@ A faster version of the popular `csvcut` tool from
 written in Python; this one is C++.
 
 This repo exists to wrap a Makefile and installion for Mac and Linux
-around the original source from [this single file](https://github.com/Tenchumaru/home/blob/master/src/csvcut.cc)
+around the original source from [@tenchumaru](https://github.com/Tenchumaru/home/blob/master/src/csvcut.cc)
 
