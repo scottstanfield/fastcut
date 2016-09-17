@@ -1,4 +1,21 @@
-// g++ -std=c++11 -o ../bin/csvcut -O3 csvcut.cc
+/*
+    Fastcut: a fast, C++ version of csvkit's csvcut tool
+	Copyright © 2016 Chris Idzerda
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 
 #include <algorithm>
 #include <fstream>
@@ -16,6 +33,12 @@ using vector= std::vector<char const*>;
 static char const* prog;
 
 static int usage() {
+	std::cerr << "Fastcut v1.0" << std::endl << std::endl;
+	std::cerr << "Copyright © 2016 Chris Idzerda" << std::endl;
+	std::cerr << "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>." << std::endl;
+	std::cerr << "This is free software: you are free to change and redistribute it." << std::endl ;
+	std::cerr << "There is NO WARRANTY, to the extent permitted by law." << std::endl << std::endl;
+
 	std::cerr << "Print selected columns to standard output." << std::endl;
 	std::cerr << std::endl;
 	std::cerr << "usage: " << prog << " [-h] [-s] -(c|K) columns [input.csv] [...]" << std::endl << std::endl;
